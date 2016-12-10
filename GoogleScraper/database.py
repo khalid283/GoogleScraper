@@ -126,6 +126,7 @@ class SearchEngineResultsPage(Base):
                     Link(
                         link=link['link'],
                         snippet=link['snippet'],
+                        snippet_sub=link['snippet_sub'],
                         title=link['title'],
                         visible_link=link['visible_link'],
                         domain=parsed.netloc,
@@ -169,6 +170,7 @@ class Link(Base):
     id = Column(Integer, primary_key=True)
     title = Column(String)
     snippet = Column(String)
+    snippet_sub = Column(String)
     link = Column(String)
     domain = Column(String)
     visible_link = Column(String)
