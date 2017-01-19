@@ -132,7 +132,7 @@ scrape_method = 'selenium'
 # If scraping with the own IP address should be allowed.
 # If this is set to False and you don't specify any proxies,
 # GoogleScraper cannot run.
-use_own_ip = True
+use_own_ip = False
 
 # Whether to check proxies before starting the scrape
 check_proxies = True
@@ -208,7 +208,7 @@ compressing_algorithm = 'gz'
 cachedir = '.scrapecache/'
 
 # After how many hours should the cache be cleaned
-clean_cache_after = 48
+clean_cache_after = 10000
 
 # Sleeping ranges.
 # The scraper in selenium mode makes random modes every N seconds as specified in the given intervals.
